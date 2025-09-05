@@ -33,7 +33,7 @@
     .section{margin:26px 0}
     .callout{border:1px dashed #334155;border-radius:14px;padding:14px;background:rgba(2,132,199,.08)}
     .pdf-wrap{margin-top:16px}
-    .pdf-viewer{width:100%;height:900px;border:1px solid var(--border);border-radius:12px}
+    .pdf-viewer{width:100%;height:80vh;border:1px solid var(--border);border-radius:12px}
     footer{margin:36px 0 18px;color:var(--muted);font-size:14px;text-align:center}
     @media print{
       body{background:#fff;color:#111}
@@ -55,13 +55,18 @@
     <section class="section card">
       <h2>フロー図（MIRO作成PDF）</h2>
       <div class="pdf-wrap">
-        <object data="gyoumuflo.pdf" 
-        type="application/pdf" 
-        class="pdf-viewer">
-  <p><a href="gyoumuflo.pdf" target="_blank">PDFフロー図を開く</a></p>
-</object>
+        <iframe src="gyoumuflo.pdf" class="pdf-viewer">
+          PDFを表示できません。<a href="gyoumuflo.pdf" target="_blank">こちらから開く</a>
+        </iframe>
       </div>
     </section>
+
+  </div>
+  <footer>
+    © 2025 仲介モデル資料
+  </footer>
+</body>
+</html>
 
     <!-- ▼ メリット -->
     <section class="section">
